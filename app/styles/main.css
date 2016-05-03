@@ -1,19 +1,19 @@
 /*my css starts*/
 /*fonts*/
 @font-face { 
-  font-family: roboto-Light; src: url('/fonts/roboto/Roboto-Light.ttf'); 
+  font-family: roboto-Light; src: url('fonts/roboto/Roboto-Light.ttf'); 
 } 
 @font-face { 
-  font-family: roboto-Bold; src: url('/fonts/roboto/Roboto-Bold.ttf');
+  font-family: roboto-Bold; src: url('fonts/roboto/Roboto-Bold.ttf');
 } 
 @font-face { 
-  font-family: roboto-Thin; src: url('/fonts/roboto/Roboto-Thin.ttf');
+  font-family: roboto-Thin; src: url('fonts/roboto/Roboto-Thin.ttf');
 } 
 @font-face { 
-  font-family: roboto-Medium; src: url('/fonts/roboto/Roboto-Medium.ttf');
+  font-family: roboto-Medium; src: url('fonts/roboto/Roboto-Medium.ttf');
 } 
 @font-face { 
-  font-family: roboto-Regular; src: url('/fonts/roboto/Roboto-Regular.ttf');
+  font-family: roboto-Regular; src: url('fonts/roboto/Roboto-Regular.ttf');
 } 
 /*comingsoon*/
 .loadingContainer{
@@ -23,7 +23,7 @@
 }
 .loadingGif{
   background-position: center;
-  background-image: url(/images/loading.gif);
+  background-image: url('images/loading.gif');
   background-repeat: no-repeat;
   background-size: contain;
   height: 50vh;
