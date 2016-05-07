@@ -15,6 +15,93 @@
 @font-face { 
   font-family: roboto-Regular; src: url('fonts/roboto/Roboto-Regular.ttf');
 } 
+body,html {
+  padding: 0px !important;
+  margin:0px !important;
+  height: 100% !important;
+  width: 100% !important;
+  font-family: roboto-Regular;
+}
+a{
+  text-decoration: none !important;
+  outline: none !important;
+}
+/*main common*/
+
+.mainContainer{
+  height: 100% !important;
+  width: 100% !important;
+  margin:0px !important;
+  padding:0px !important;
+  background:blue;
+}
+.myContainer{
+  height: 100vh;
+  width: 100vw;
+  margin:0px !important;
+  padding:0px !important;
+  background-image: url('images/me.jpg');
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+    /*header starts*/
+    .headerContainer{
+      margin: 0px !important;
+      padding: 0px !important;
+      text-align: center;
+    }
+    .hearderRow{
+      padding: 0px;
+    }
+    .headerColumn{
+      height: 100%;
+      padding: 50px;
+      margin: 0px !important;
+      background:red;
+      cursor: pointer;
+    }
+    .headerColumn p{
+      color:black;
+      font-size: 1.2em;
+      font-family: roboto-Bold;
+      -webkit-transition: all ease-out .4s;
+      -moz-transition: all ease-out .4s;
+      -o-transition: all ease-out .4s;
+      transition: all ease-out .4s;
+    }
+    .menuIcon{
+      height: 50px;
+      width:50px;
+      background-image: url('images/menuIcon.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      right:10px;
+      top:10px;
+      -webkit-transition: all ease-out .4s;
+      -moz-transition: all ease-out .4s;
+      -o-transition: all ease-out .4s;
+      transition: all ease-out .4s;
+    }
+    .menuIconClose{
+      height: 50px;
+      width:50px;
+      background-image: url('images/cross.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      right:10px;
+      top:10px;
+      -webkit-transition: all ease-out .4s;
+      -moz-transition: all ease-out .4s;
+      -o-transition: all ease-out .4s;
+      transition: all ease-out .4s;
+    }
+    /*header ends*/
+ 
+/*main common ends*/
+/*about me*/
+/*about me ends*/
 /*comingsoon*/
 .loadingContainer{
   width: 100% !important;
@@ -47,11 +134,7 @@
   padding: 0.2em 0;
 }
 
-body,html {
-  padding: 0;
-  height: 100% !important;
-  width: 100% !important;
-}
+
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,

@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name manasHomeApp.controller:MainCtrl
+ * @name manasHomeApp.controller:AcknowledgementCtrl
  * @description
- * # MainCtrl
+ * # AcknowledgementCtrl
  * Controller of the manasHomeApp
  */
 angular.module('manasHomeApp')
-  .controller('MainCtrl', function () {
+  .controller('AcknowledgementCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',

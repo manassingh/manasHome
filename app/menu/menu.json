@@ -1,0 +1,18 @@
+[
+	{
+		"id":"home",
+		"name":"Home"
+	},
+	{
+		"id":"work",
+		"name":"Work"
+	},
+	{
+		"id":"portfolio",
+		"name":"Portfolio"
+	},
+	{
+		"id":"contact",
+		"name":"Contact"
+	}
+]

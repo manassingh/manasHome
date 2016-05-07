@@ -1,0 +1,17 @@
+<div class="row headerContainer">
+	
+	<div class="col-lg-6 col-md-5 col-sm-3 hidden-xs">
+		
+	</div>
+	<div class="hearderRow col-lg-6 col-md-7 col-sm-9 hidden-xs">
+		
+		<div id="navMenu" ui-sref={{menu.name.toLowerCase()}} ng-mouseenter="header.hoverIn($event)" ng-mouseleave="header.hoverOut($event)" ng-click="header.selectedMenu($event)" class="headerColumn col-lg-3 col-md-3 col-sm-3 col-xs-12" ng-repeat="menu in header.menuList">
+			<p ng-style="{{menu.id}}===header.currentMenu ? {color:'black'}:{color:'white'}" id="{{menu.id}}" class="headerLinks">{{menu.name}}</p>
+		</div>
+		
+	</div>
+	<div class="menuIcon visible-xs" ng-click="header.showMenuMobile($event)">
+		
+	</div>
+	
+</div>
