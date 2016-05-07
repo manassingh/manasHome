@@ -12,13 +12,15 @@ angular.module('manasHomeApp')
     var self= this;
     var currentMenu;
     var flagAlreadySelected = true;
-
+    var menuDiv;
+    var menuIcon;
+    
     //mobile menu
     var flagMenuOpen=0;
     self.showMenuMobile = function(event){
-        var menuDiv = event.target.parentElement.children[1];
-        var menuIcon = event.target;
-        console.log(menuIcon);
+        menuDiv = event.target.parentElement.children[1];
+        menuIcon = event.target;
+        //console.log(menuIcon);
         if(!flagMenuOpen){
             $(menuIcon).removeClass('menuIcon');
             $(menuIcon).addClass('menuIconClose');
@@ -32,6 +34,8 @@ angular.module('manasHomeApp')
         }
         
     };
+    
+
 
     //getting data from header service
     header.getMenu().then(function(data){
@@ -74,3 +78,7 @@ angular.module('manasHomeApp')
     	
     };
   }]);
+
+  $(document).ready(function(){
+    console.log($('#home'));
+  });
