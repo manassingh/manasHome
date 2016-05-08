@@ -1,18 +1,18 @@
 [
 	{
 		"id":"home",
-		"name":"Home"
+		"name":"HOME"
 	},
 	{
 		"id":"work",
-		"name":"Work"
+		"name":"WORK"
 	},
 	{
 		"id":"portfolio",
-		"name":"Portfolio"
+		"name":"PORTFOLIO"
 	},
 	{
 		"id":"contact",
-		"name":"Contact"
+		"name":"CONTACT"
 	}
 ]

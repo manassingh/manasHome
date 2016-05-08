@@ -12,14 +12,12 @@ angular.module('manasHomeApp')
     var self= this;
     var currentMenu;
     var flagAlreadySelected = true;
-    var menuDiv;
-    var menuIcon;
     
     //mobile menu
     var flagMenuOpen=0;
     self.showMenuMobile = function(event){
-        menuDiv = event.target.parentElement.children[1];
-        menuIcon = event.target;
+        var menuDiv = event.target.parentElement.children[1];
+        var menuIcon = event.target;
         //console.log(menuIcon);
         if(!flagMenuOpen){
             $(menuIcon).removeClass('menuIcon');
@@ -34,8 +32,6 @@ angular.module('manasHomeApp')
         }
         
     };
-    
-
 
     //getting data from header service
     header.getMenu().then(function(data){
@@ -47,7 +43,7 @@ angular.module('manasHomeApp')
     self.selectedMenu = function(event){
     	var links=angular.element(document.getElementsByClassName('headerLinks'));
     	for(var i = 0; i < links.length; i++){
-		   links[i].style.color='black';
+		   links[i].style.color='#A2A2A2';
 		}
 		if (event.target.tagName.toUpperCase()==='DIV') {
 			event.target.children[0].style.color='white';
@@ -73,12 +69,7 @@ angular.module('manasHomeApp')
     self.hoverOut = function(event){
     	if (!flagAlreadySelected) {
     		//console.log('out not selected');
-    		event.target.children[0].style.color='black';
+    		event.target.children[0].style.color='#A2A2A2';
     	}
-    	
     };
   }]);
-
-  $(document).ready(function(){
-    console.log($('#home'));
-  });
