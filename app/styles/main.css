@@ -225,8 +225,11 @@ a{
 .workCatagoryRow{
   margin-left: 20px;
   margin-right: 20px;
-  margin-top: 20%;
+  padding-top: 20%;
   text-align: center;
+  height: 100%;
+  overflow: scroll;
+  padding-bottom: 60px;
   vertical-align: center;
   -webkit-transition: all ease-out .4s;
   -moz-transition: all ease-out .4s;
@@ -431,7 +434,7 @@ a{
       font-size: 1.4em;
     }
     .workCatagoryRow{
-      margin-top: 30%;
+      padding-top: 30%;
     }
     /*work page ends*/
 
@@ -493,6 +496,9 @@ a{
        .headerColumn{
         padding:25px !important;
        }
+       .workCatagoryRow{
+          padding-top: 10% !important;
+        }
       /* .homeContainer{
         background-image: url('images/noLandscapeMobile.png') !important;
        }
@@ -507,7 +513,9 @@ a{
 
   /*main common*/
     /*header*/
-    
+    .headerColumn{
+        padding:40px !important;
+       }
     /*header ends*/
   /*main common ends*/
   /*home page*/
@@ -538,7 +546,7 @@ a{
     .workCatagoryRow{
       margin-left: 20px;
       margin-right: 20px;
-      margin-top: 30%;
+      padding-top: 30%;
     }
     .workCatagoryContainer{
       padding: 0px;
