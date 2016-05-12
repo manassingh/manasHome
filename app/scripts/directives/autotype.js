@@ -18,14 +18,18 @@ angular.module('manasHomeApp')
 	          
       	var index=0;
       	var enterText1 = function(event) {
-	      if (index <= text1.length) {
-	          element.text(text1.substr(0, index++) + '  |');
-	          setTimeout(enterText1, 70);
-	      }else{
-	      	element.text(text1);
-	      }
-	    };
-	    setTimeout(enterText1, 3000);
+  	      if (index <= text1.length) {
+  	          element.text(text1.substr(0, index++) + '  |');
+  	          setTimeout(enterText1, 70);
+  	      }else{
+  	      	element.text(text1);
+  	      }
+  	    };
+        angular.element(document).ready(function(){
+          setTimeout(enterText1, 1500);
+        });
+      
+	    
 	    
         //element.text('this is the autoType directive');
       }

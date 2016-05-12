@@ -1,0 +1,22 @@
+[
+	{
+		"id":"projects",
+		"name":"PROJECTS",
+		"imagePath":"../styles/images/workCatagory1.png"
+	},
+	{
+		"id":"sketches",
+		"name":"SKETCHES",
+		"imagePath":"../styles/images/workCatagory2.png"
+	},
+	{
+		"id":"digitalart",
+		"name":"DIGITAL ART",
+		"imagePath":"../styles/images/workCatagory3.png"
+	},
+	{
+		"id":"photography",
+		"name":"PHOTOGRAPHY",
+		"imagePath":"../styles/images/workCatagory4.png"
+	}
+]

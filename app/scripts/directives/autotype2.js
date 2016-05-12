@@ -55,7 +55,10 @@ angular.module('manasHomeApp')
 	      	element.text(text3 + text4);
 	      }
 	    };
-	    setTimeout(enterText2, 5300);
+	    angular.element(document).ready(function(){
+          setTimeout(enterText2, 3800);
+        });
+	    //setTimeout(enterText2, 5300);
 	    
       }
     };

@@ -1,1 +1,20 @@
-<div ng-include="'views/header.html'" ng-controller="HeaderCtrl as header"></div>
+<div class="mainContainer homeContainer">
+	<div class="headerParentContainer" ng-include="'views/header.html'" ng-controller="HeaderCtrl as header"></div>
+	<div class="row workCatagoryRow">
+		<div class="workCatagoryContainer col-lg-3 col-md-3 col-sm-6 col-xs-6" ng-repeat="work in work.workList">
+			<div class="workCatagoryHover">
+				<div class="workCatagory" style="background-image:url('{{work.imagePath}}')">
+					<p class="workCatagoryText">{{work.name}}</p>
+					<div class="workCatagoryOpacityBg">
+						
+					</div>
+
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	
+	<div class="footerParentContainer" ng-include="'views/footer.html'" ng-controller="FooterCtrl as footer"></div>
+	
+</div>

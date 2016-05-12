@@ -33,13 +33,17 @@ a{
   width: 100% !important;
   margin:0px !important;
   padding:0px !important;
-  background:#a5a5a5;
+  background-repeat: no-repeat;
+  background-size: cover; 
 }
 
     /*header starts*/
     .headerParentContainer{
       position: absolute;
-      top: 0px;width: 100%
+      top: 0px;
+      width: 100%;
+      height: inherit;
+      overflow: scroll;
     }
     .headerContainer{
       margin: 0px !important;
@@ -53,6 +57,13 @@ a{
       -moz-transition: all ease-out .4s;
       -o-transition: all ease-out .4s;
       transition: all ease-out .4s;
+    }
+    .headerFullHeight{
+      height: 100%;
+      background:#393939;
+      opacity: 1;
+      z-index: 1000;
+      overflow: scroll;
     }
     .headerColumn{
       height: 100%;
@@ -80,6 +91,7 @@ a{
       background-size: contain;
       position: absolute;
       right:20px;
+      z-index: 2000;
       top:20px;
       -webkit-transition: all ease-out .4s;
       -moz-transition: all ease-out .4s;
@@ -89,6 +101,7 @@ a{
     .menuIconClose{
       height: 30px;
       width:30px;
+      z-index: 2000;
       background-image: url('images/cross.png');
       background-repeat: no-repeat;
       background-size: cover;
@@ -123,6 +136,7 @@ a{
       width: 100%;
       height: 60px;
       text-align: center;
+      overflow: hidden;
     }
     .footerBg{
       position: absolute;
@@ -171,21 +185,14 @@ a{
 
 /*home page*/
   .homeContainer{
-    height: 100%;
-    width: 100%;
-    margin:0px !important;
-    padding:0px !important;
     background-image: url('images/homeBg.png');
-    background-repeat: no-repeat;
-    background-size: cover; 
-    overflow: hidden;
   }
   .homePageTextContainer{
     padding: 15px;
     padding-right: 350px;
     padding-left: 350px;
     text-align: center;
-    margin-top: 20%;
+    padding-top: 22%;
     -webkit-transition: all ease-out .4s;
       -moz-transition: all ease-out .4s;
       -o-transition: all ease-out .4s;
@@ -210,6 +217,91 @@ a{
       transition: all ease-out .4s;
   }
 /*home page ends*/
+
+/*work page*/
+.workContainer{
+  background-image: url('images/workBg.png');
+}
+.workCatagoryRow{
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20%;
+  text-align: center;
+  vertical-align: center;
+  -webkit-transition: all ease-out .4s;
+  -moz-transition: all ease-out .4s;
+  -o-transition: all ease-out .4s;
+  transition: all ease-out .4s;
+}
+.workCatagoryContainer{
+  padding: 0px;
+  text-align: center !important;
+}
+.workCatagoryHover{
+  text-align: center;
+  display: inline-block;
+  height: 300px;
+  width: 300px;
+}
+.workCatagory{
+  cursor: pointer;
+  background-size: 100% 100%;
+  height: inherit;
+  text-align: center;
+  position: relative;
+  -webkit-transition: all ease-out .4s;
+  -moz-transition: all ease-out .4s;
+  -o-transition: all ease-out .4s;
+  transition: all ease-out .4s;
+
+}
+.workCatagoryOpacityBg{
+  background-image:url('images/workCatagoryOpacityBg.png');
+  background-size: 100% 100%;
+  height: inherit;
+  width: 100%;
+  opacity: .4;
+  position: absolute;
+  top:0px;
+  -webkit-transition: all ease-out .4s;
+  -moz-transition: all ease-out .4s;
+  -o-transition: all ease-out .4s;
+  transition: all ease-out .4s;
+
+}
+  .workCatagoryText{
+    font-family: roboto-Bold;
+    padding-top: 140px;
+    color: black;
+    font-size: 1.4em;
+    -webkit-transition: all ease-out .2s;
+    -moz-transition: all ease-out .2s;
+    -o-transition: all ease-out .2s;
+    transition: all ease-out .2s;
+
+  }
+.workCatagoryHover:hover .workCatagoryOpacityBg{
+  opacity: 0;
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.workCatagoryHover:hover .workCatagoryText{
+  opacity: 0;
+  -moz-transform: scale(1.4);
+  -webkit-transform: scale(1.4);
+  -o-transform: scale(1.4);
+  transform: scale(1.4);
+}
+.workCatagoryHover:hover .workCatagory{
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+
+}
+/*work page ends*/
 
 /*about me*/
 /*about me ends*/
@@ -319,17 +411,42 @@ a{
     border-bottom: 0;
   }
 }
+/*medium desktop*/
+@media screen and (min-width: 992px) and (max-width: 1204px) {
+  /*home page*/
+    .homePageTextContainer{
+      padding-right: 150px;
+      padding-left: 150px;
+      padding-top: 25%;
+    }
+  /*home page ends*/
+
+  /*work page*/
+    .workCatagoryHover{
+      height: 230px;
+      width: 230px;
+    }
+    .workCatagoryText{
+      padding-top: 110px;
+      font-size: 1.4em;
+    }
+    .workCatagoryRow{
+      margin-top: 30%;
+    }
+    /*work page ends*/
+
+}
 /*tablet media*/
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
   /*main common*/
     /*header*/
     /*header ends*/
   /*main common ends*/
   /*home page*/
   .homePageTextContainer{
-    padding-right: 150px;
-    padding-left: 150px;
-    margin-top: 14%;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 25%;
   }
   .autoType1{
     font-size: 1.8em;
@@ -338,15 +455,59 @@ a{
     font-size: 1.5em;
   }
   /*home page ends*/
+
+  /*work paage*/
+    .workCatagoryHover{
+      height: 300px;
+      width: 300px;
+    }
+    .workCatagoryText{
+      padding-top: 140px;
+      font-size: 1.4em;
+    }
+    .workCatagoryContainer{
+      padding: 0px;
+    }
+  /*work page ends*/
+}
+/*tablet media ipad*/
+@media screen and (min-width: 767px) and (max-width: 768px){
+  .homeContainer{
+    background-image: url('images/homeBgMobile.png');
+    background-repeat: no-repeat;
+    background-size: cover; 
+  }
 }
 /*mobile media*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
+      /* Portrait */
+    @media screen and (orientation:portrait) {
+       /* Portrait styles here */
+    }
+    /* Landscape */
+    @media screen and (orientation:landscape) {
+       /* Landscape styles here */
+       .homePageTextContainer{
+          padding-top: 19% !important;
+       }
+       .headerColumn{
+        padding:25px !important;
+       }
+      /* .homeContainer{
+        background-image: url('images/noLandscapeMobile.png') !important;
+       }
+       .headerParentContainer{
+          display: none;
+       }
+       
+       .footerParentContainer{
+          display: none;
+       }*/
+    }
+
   /*main common*/
     /*header*/
-    .headerParentContainer{
-      background:#393939;
-      opacity: .9;
-    }
+    
     /*header ends*/
   /*main common ends*/
   /*home page*/
@@ -356,15 +517,15 @@ a{
     background-size: cover; 
   }
   .homePageTextContainer{
-    padding-right: 50px;
-    padding-left: 50px;
-    margin-top: 55%;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 55%;
   }
   .autoType1{
-    font-size: 1.6em;
+    font-size: 1.4em;
   }
   .autoType2{
-    font-size: 1.3em;
+    font-size: 1.1em;
   }
   .manasLogo{
       height: 23px;
@@ -373,4 +534,58 @@ a{
       top:35px;
     }
   /*home page ends*/
+  /*work page*/
+    .workCatagoryRow{
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-top: 30%;
+    }
+    .workCatagoryContainer{
+      padding: 0px;
+      text-align: center !important;
+    }
+    .workCatagoryHover{
+      text-align: center;
+      display: inline-block;
+      height: 150px;
+      width: 150px;
+    }
+    .workCatagory{
+      cursor: pointer;
+      background-size: 100% 100%;
+      height: inherit;
+      text-align: center;
+      position: relative;
+      -webkit-transition: all ease-out .4s;
+      -moz-transition: all ease-out .4s;
+      -o-transition: all ease-out .4s;
+      transition: all ease-out .4s;
+
+    }
+    .workCatagoryOpacityBg{
+      background-image:url('images/workCatagoryOpacityBg.png');
+      background-size: 100% 100%;
+      height: inherit;
+      display: none;
+      opacity: .4;
+      position: absolute;
+      top:0px;
+      -webkit-transition: all ease-out .4s;
+      -moz-transition: all ease-out .4s;
+      -o-transition: all ease-out .4s;
+      transition: all ease-out .4s;
+
+    }
+      .workCatagoryText{
+        font-family: roboto-Bold;
+        padding-top: 140px;
+        color: white;
+        font-size: .8em;
+        -webkit-transition: all ease-out .4s;
+        -moz-transition: all ease-out .4s;
+        -o-transition: all ease-out .4s;
+        transition: all ease-out .4s;
+
+      }
+  /*work page ends*/
 }

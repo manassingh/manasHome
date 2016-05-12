@@ -23,11 +23,13 @@ angular.module('manasHomeApp')
             $(menuIcon).removeClass('menuIcon');
             $(menuIcon).addClass('menuIconClose');
             $(menuDiv).removeClass('hidden-xs');
+            $(menuDiv).addClass('headerFullHeight');
             flagMenuOpen=1;
         }else{
             $(menuIcon).removeClass('menuIconClose');
             $(menuIcon).addClass('menuIcon');
             $(menuDiv).addClass('hidden-xs');
+            $(menuDiv).removeClass('headerFullHeight');
             flagMenuOpen=0;
         }
         
