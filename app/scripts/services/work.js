@@ -15,4 +15,21 @@ angular.module('manasHomeApp')
             return response.data;
           });
     };
+    this.getSketches = function(){
+        return $http.get('menu/sketches.json').then(function (response) {
+            return response.data;
+          });
+    };
+
+    this.getConceptArtList = function(){
+        return $http.get('menu/conceptart.json').then(function (response) {
+            return response.data;
+          });
+    };
+
+    this.getPhotoList = function(){
+        return $http.get('menu/photo.json').then(function (response) {
+            return response.data;
+          });
+    };
   });

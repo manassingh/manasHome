@@ -1,0 +1,20 @@
+<div id="carouselPhoto" class="carousel slide " data-ride="carousel" data-interval="false">
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div ng-repeat="photo in projects.photoList" style="max-height: 100%;" class="item" ng-class="{{photo.index}}==0 ? 'active':''">
+      <img src="{{photo.imagePath}}" class="sketchesImg" style="" alt="...">
+      <div class="carousel-caption">
+        {{photo.index + 1}}/{{projects.photoList.length }}
+      </div>
+    </div>
+    
+  </div>
+
+  <!-- Controls -->
+  <span class="left carousel-control" data-target="#carouselPhoto" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </span>
+  <span class="right carousel-control" data-target="#carouselPhoto" data-slide="next">
+	   <span class="glyphicon glyphicon-chevron-right"></span>
+  </span>
+</div>

@@ -16,6 +16,15 @@ angular.module('manasHomeApp')
       self.workList=data;
     });
 
+    self.openModel = function(event){
+      $('#model' + event.target.id).modal('show');
+    };
+
+    self.getController = function(event){ 
+      console.log(event);
+        return 'views/projects.html';
+    };
+
   	angular.element(document).ready(function () {
   		var menuList;
 	  	header.getMenu().then(function(data){

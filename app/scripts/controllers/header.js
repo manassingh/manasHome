@@ -54,6 +54,7 @@ angular.module('manasHomeApp')
     		event.target.style.color='white';
     		flagAlreadySelected = true;
     	}
+        window.location.reload();
     	
     };
 

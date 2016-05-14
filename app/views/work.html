@@ -1,20 +1,53 @@
 <div class="mainContainer homeContainer">
 	<div class="headerParentContainer" ng-include="'views/header.html'" ng-controller="HeaderCtrl as header"></div>
 	<div class="row workCatagoryRow">
-		<div class="workCatagoryContainer col-lg-3 col-md-3 col-sm-6 col-xs-6" ng-repeat="work in work.workList">
+		<div class="workCatagoryContainer col-lg-3 col-md-3 col-sm-6 col-xs-6"  ng-repeat="workList in work.workList"  ng-click="work.openModel($event)" >
 			<div class="workCatagoryHover">
-				<div class="workCatagory" style="background-image:url('{{work.imagePath}}')">
-					<p class="workCatagoryText">{{work.name}}</p>
-					<div class="workCatagoryOpacityBg">
+				<!--model-->
+				<div class="modal fade" id="model{{workList.id}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+
+				  <div class="modal-dialog" role="document">
+
+				    <div class="modal-content modelContent">
+				      <div class="modal-header" style="border-bottom: none">
+				        <button type="button" class="close modelClose" ng-click="work.changeFocus()" style="color:white !important;" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				        <h4 class="modal-title modalTitle" id="myModalLabel">{{workList.name}}</h4>
+
+				      </div>
+
+				      <div class="modal-body">
+				        <div ng-include="'views/'+ workList.id +'.html'" ng-controller="ProjectsCtrl as projects"></div>
+				      </div>
+				      <div class="modal-footer" style="display: none">
+				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				        <button type="button" class="btn btn-primary">Save changes</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>   
+				
+				<div class="workCatagory"  style="background-image:url('{{workList.imagePath}}')">
+
+					<p class="workCatagoryText">{{workList.name}}</p>
+
+					<div class="workCatagoryOpacityBg" id="{{workList.id}}" data-toggle="modal">
 						
 					</div>
+
 
 				</div>
 			</div>
 			
 		</div>
+
 	</div>
+
+	<!--art work model-->
+	<!-- Button trigger modal -->
+
+
 	
+
 	<div class="footerParentContainer" ng-include="'views/footer.html'" ng-controller="FooterCtrl as footer"></div>
 	
 </div>

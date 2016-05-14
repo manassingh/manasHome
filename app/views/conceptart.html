@@ -1,0 +1,25 @@
+<div id="carouselArt" class="carousel slide " data-ride="carousel" data-interval="false">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li style="display: none" ng-repeat="art in projects.conceptArtList" data-target="#carouselArt" data-slide-to="{{art.index}}" ng-class="{{art.index}}==0 ? 'active':''"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div ng-repeat="art in projects.conceptArtList" style="max-height: 100%;" class="item" ng-class="{{art.index}}==0 ? 'active':''">
+      <img src="{{art.imagePath}}" class="sketchesImg" style="" alt="...">
+      <div class="carousel-caption">
+        {{art.index + 1}}/{{projects.conceptArtList.length }}
+      </div>
+    </div>
+    
+  </div>
+
+  <!-- Controls -->
+  <span class="left carousel-control" data-target="#carouselArt" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </span>
+  <span class="right carousel-control" data-target="#carouselArt" data-slide="next">
+	   <span class="glyphicon glyphicon-chevron-right"></span>
+  </span>
+</div>

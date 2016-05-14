@@ -28,5 +28,6 @@ angular.module('manasHomeApp')
 	  		menuList=data;
 	  		header.setSelectedMenu(menuList[0].id);
 	  	});
+      
     });
   }]);

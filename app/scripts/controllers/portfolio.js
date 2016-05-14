@@ -8,13 +8,10 @@
  * Controller of the manasHomeApp
  */
 angular.module('manasHomeApp')
-  .controller('PortfolioCtrl',['header',function (header) {
-  	//var self = this;
-  	angular.element(document).ready(function () {
-  		var menuList;
-	  	header.getMenu().then(function(data){
-	  		menuList=data;
-	  		header.setSelectedMenu(menuList[2].id);
-	  	});
-    });
-  }]);
+  .controller('PortfolioCtrl', function () {
+    this.awesomeThings = [
+      'HTML5 Boilerplate',
+      'AngularJS',
+      'Karma'
+    ];
+  });
