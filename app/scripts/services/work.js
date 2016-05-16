@@ -32,4 +32,10 @@ angular.module('manasHomeApp')
             return response.data;
           });
     };
+
+    this.getProjectsList = function(){
+        return $http.get('menu/projects.json').then(function (response) {
+            return response.data;
+          });
+    };
   });

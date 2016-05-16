@@ -42,6 +42,15 @@ a{
 .modal-backdrop.in{
   display: none;
 }
+.modal{
+  padding:0px !important;
+}
+.show{
+  display: block;
+}
+.hide{
+  display: none;
+}
 /*main common*/
 
 .mainContainer{
@@ -76,10 +85,10 @@ a{
     }
     .headerFullHeight{
       height: 100%;
-      background:#393939;
+      background:transparent;
       opacity: 1;
       z-index: 1000;
-      overflow: scroll;
+      overflow: auto;
     }
     .headerColumn{
       height: 100%;
@@ -321,22 +330,46 @@ a{
 
 }
 .modelContent{
-  background: black;
+  background: #191919;
+}
+.modelContentWhite{
+  background: #e0e0e0;
 }
 .modalTitle{
   color: #E0E0E0;
+  font-family: roboto-Bold;
+}
+.modalTitleBlack{
+  color: #000;
   font-family: roboto-Bold;
 }
 .modelClose{
   color:white;
   font-size: 2em;
 }
+.modelCloseBlack{
+  color:#000;
+  font-size: 2em;
+}
+.modelClose:hover{
+  color:#fff;
+  font-size: 2em;
+}
 .sketchesImg{
   margin:0px auto;
   height: 86vh !important;
-  width: auto
+  width: auto;
+}
+.projectImg{
+  margin:0px auto;
+  height: 60vh !important;
+  width: auto;
+}
+.videoControlMargin{
+  margin-bottom: 45px;
 }
 /*work page ends*/
+
 
 /*about me*/
 /*about me ends*/
@@ -548,6 +581,9 @@ a{
     .headerColumn{
         padding:40px ;
        }
+      .headerFullHeight{
+      background:#393939;
+    }
     /*header ends*/
   /*main common ends*/
   /*home page*/
@@ -645,6 +681,10 @@ a{
       .sketchesImg{
         height: auto !important ;
         max-height: 83vh !important
+      }
+      .projectImg{
+        height: auto !important ;
+        max-height: 83vh !important;
       }
   /*work page ends*/
 }

@@ -574,5 +574,11 @@
     "id": "photo96",
     "name": "photo96",
     "imagePath": "../styles/images/photo/96.jpg"
+  },
+  {
+    "index": 96,
+    "id": "photo97",
+    "name": "photo97",
+    "imagePath": "../styles/images/photo/97.jpg"
   }
 ]

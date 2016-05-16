@@ -8,10 +8,10 @@
 
 				  <div class="modal-dialog" role="document">
 
-				    <div class="modal-content modelContent">
+				    <div class="modal-content " ng-class="{{workList.index}}==0 ? 'modelContent':'modelContent'">
 				      <div class="modal-header" style="border-bottom: none">
-				        <button type="button" class="close modelClose" ng-click="work.changeFocus()" style="color:white !important;" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				        <h4 class="modal-title modalTitle" id="myModalLabel">{{workList.name}}</h4>
+				        <button type="button" class="close" ng-class="{{workList.index}}==0 ? 'modelClose':'modelClose'" ng-click="work.changeFocus()" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				        <h4 class="modal-title " ng-class="{{workList.index}}==0 ? 'modalTitle':'modalTitle'" id="myModalLabel">{{workList.name}}</h4>
 
 				      </div>
 

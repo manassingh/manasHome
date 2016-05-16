@@ -1,0 +1,224 @@
+[
+  {
+    "index": 0,
+    "id": "project1",
+    "title": "Responsive Oracle Marketplace",
+    "subTitle":"Oracle Marketplace Appstore: An online store to find and immediately start using the software and services that run in the Oracle Cloud.",
+    "detail": " Key modules on which I have worked, Development of responsive UI for Oracle Marketplace, targeting all major android, iOS and large screen devices. \n Implementation of features like wish list for apps, automated get/uninstall/upgrade app flows, REST API’s etc for Oracle Marketplace.\n Integration of Endeca Commerce search with Oracle Marketplace for guided navigation and keyword search.",
+    "link":"https://cloud.oracle.com/marketplace",
+    "linkTitle":"Work Link >",
+    "imagePath": [
+      {
+        "ind":0,
+        "path":"../styles/images/project/project1/1.png"
+      },
+      {
+        "ind":1,
+        "path":"../styles/images/project/project1/2.png"
+      },
+      {
+        "ind":2,
+        "path":"../styles/images/project/project1/3.png"
+      },
+      {
+        "ind":3,
+        "path":"../styles/images/project/project1/4.png"
+      },
+      {
+        "ind":4,
+        "path":"../styles/images/project/project1/5.png"
+      },
+      {
+        "ind":5,
+        "path":"../styles/images/project/project1/6.png"
+      },
+      {
+        "ind":6,
+        "path":"../styles/images/project/project1/7.png"
+      },
+      {
+        "ind":7,
+        "path":"../styles/images/project/project1/8.png"
+      },
+      {
+        "ind":8,
+        "path":"../styles/images/project/project1/9.png"
+      }
+      
+    ]
+  },
+  {
+    "index": 1,
+    "id": "project2",
+    "title": "Socialize: Proximity based social networking app",
+    "subTitle":"A proximity based social networking app to connect people",
+    "link":"https://play.google.com/store/apps/details?id=in.socioapp.socialize&hl=en",
+    "linkTitle":"Work Link >",
+    "detail": "Designed and developed the whole android App from scratch. Made all UI designs, logo and all work flow of the application",
+    "imagePath": [
+      {
+        "ind":0,
+        "path":"../styles/images/project/project2/1.png"
+      },
+      {
+        "ind":1,
+        "path":"../styles/images/project/project2/2.png"
+      },
+      {
+        "ind":2,
+        "path":"../styles/images/project/project2/3.png"
+      },
+      {
+        "ind":3,
+        "path":"../styles/images/project/project2/4.png"
+      },
+      {
+        "ind":4,
+        "path":"../styles/images/project/project2/5.png"
+      },
+      {
+        "ind":5,
+        "path":"../styles/images/project/project2/6.png"
+      },
+      {
+        "ind":6,
+        "path":"../styles/images/project/project2/7.png"
+      },
+      {
+        "ind":7,
+        "path":"../styles/images/project/project2/8.png"
+      },
+      {
+        "ind":8,
+        "path":"../styles/images/project/project2/9.png"
+      },
+      {
+        "ind":9,
+        "path":"../styles/images/project/project2/10.png"
+      }
+      
+    ]
+  },
+  {
+    "index": 5,
+    "id": "project6",
+    "title": "B-Tech Project: Surrealist conversion of Hindi sayings",
+    "subTitle":"Surrealist motion video",
+    "link":"#",
+    "linkTitle":"",
+    "detail": "Worked on this project as a part of my graduation final project with Proff. Kaumodi Patil at Indian Institute of Technology ,Kanpur. Aim was to select an artform to convert some Hindi language saying. I picked up some sayings and converted it to may art forms like surrealism, realism, minimalism and cubism. As a final product i made two motion video by clicking 100s of pics. Music is not mine, i have taken online music available.",
+    "imagePath": [
+      {
+        "ind":0,
+        "path":"../styles/images/project/project6/1.mp4"
+      },
+      {
+        "ind":1,
+        "path":"../styles/images/project/project6/2.mp4"
+      }
+    ]
+  },
+  {
+    "index": 2,
+    "id": "project3",
+    "title": "Rydo: An online carsharing platform ",
+    "subTitle":"A start-up based on idea of carsharing platform",
+    "link":"http://rydo.in/",
+    "linkTitle":"Work Link >",
+    "detail": "Designed and created responsive UI for the company website.",
+    "imagePath": [
+      {
+        "ind":0,
+        "path":"../styles/images/project/project3/1.png"
+      },
+      {
+        "ind":1,
+        "path":"../styles/images/project/project3/2.png"
+      },
+      {
+        "ind":2,
+        "path":"../styles/images/project/project3/3.png"
+      },
+      {
+        "ind":3,
+        "path":"../styles/images/project/project3/4.png"
+      },
+      {
+        "ind":4,
+        "path":"../styles/images/project/project3/5.png"
+      },
+      {
+        "ind":5,
+        "path":"../styles/images/project/project3/6.png"
+      }
+      
+    ]
+  },
+  {
+    "index": 3,
+    "id": "project4",
+    "title": "What's On Rent: An online rental platform",
+    "subTitle":"A start-up based on idea of online rental platform",
+    "link":"#",
+    "linkTitle":"",
+    "detail": "Implemented the created designs into web-pages. Created and launched the website in a month.",
+    "imagePath": [
+      {
+        "ind":0,
+        "path":"../styles/images/project/project4/1.png"
+      },
+      {
+        "ind":1,
+        "path":"../styles/images/project/project4/2.png"
+      },
+      {
+        "ind":2,
+        "path":"../styles/images/project/project4/3.png"
+      },
+      {
+        "ind":3,
+        "path":"../styles/images/project/project4/4.png"
+      },
+      {
+        "ind":4,
+        "path":"../styles/images/project/project4/5.png"
+      },
+      {
+        "ind":5,
+        "path":"../styles/images/project/project4/6.png"
+      }
+      
+    ]
+  },
+  {
+    "index": 4,
+    "id": "project5",
+    "title": "Wow Bee: An online hand made cards and artwork platform",
+    "subTitle":"A start-up based on idea of online hand made cards and artwork platform",
+    "link":"#",
+    "linkTitle":"",
+    "detail": "Implemented the created designs into web-pages. Just developed the inchoate version of website.",
+    "imagePath": [
+      {
+        "ind":0,
+        "path":"../styles/images/project/project5/1.png"
+      },
+      {
+        "ind":1,
+        "path":"../styles/images/project/project5/2.png"
+      },
+      {
+        "ind":2,
+        "path":"../styles/images/project/project5/3.png"
+      },
+      {
+        "ind":3,
+        "path":"../styles/images/project/project5/4.png"
+      },
+      {
+        "ind":4,
+        "path":"../styles/images/project/project5/5.png"
+      }
+    ]
+  }
+]

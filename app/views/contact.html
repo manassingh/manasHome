@@ -1,2 +1,12 @@
-<div ng-include="'views/header.html'" ng-controller="HeaderCtrl as header"></div>
-
+<div class="mainContainer homeContainer">
+	<div class="headerParentContainer" ng-include="'views/header.html'" ng-controller="HeaderCtrl as header"></div>
+	<div class="homePageTextContainer">
+		<span class="glyphicon glyphicon-map-marker" aria-hidden="true" span class="autoType2" style="margin-right: 10px;color:white;font-size: 1.6em"></span><span class="autoType2">Bangalore, India</span>
+		<br /><br />
+		<span class="glyphicon glyphicon-phone-alt" aria-hidden="true" span class="autoType2" style="margin-right: 10px;color:white;font-size: 1.6em"></span><span class="autoType2">+91 8884099333</span>
+		<br /><br />
+		<span class="glyphicon glyphicon-envelope" aria-hidden="true" span class="autoType2" style="margin-right: 10px;color:white;font-size: 1.6em"></span><span class="autoType2">manas231091iitk@gmail.com</span>
+	</div>
+	<div class="footerParentContainer" ng-include="'views/footer.html'" ng-controller="FooterCtrl as footer"></div>
+	
+</div>

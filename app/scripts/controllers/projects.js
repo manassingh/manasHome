@@ -11,6 +11,11 @@ angular.module('manasHomeApp')
   .controller('ProjectsCtrl', ['work',function (work) {
   	var self = this;
 
+  	//getting projects from work service
+    work.getProjectsList().then(function(data){
+      self.projectsList=data;
+    });
+
     //getting sketches from work service
     work.getSketches().then(function(data){
       self.sketchkList=data;

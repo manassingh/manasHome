@@ -1,20 +1,24 @@
 [
 	{
+		"index":0,
 		"id":"projects",
 		"name":"PROJECTS",
 		"imagePath":"../styles/images/workCatagory1.png"
 	},
 	{
+		"index":1,
 		"id":"sketches",
 		"name":"SKETCHES",
 		"imagePath":"../styles/images/workCatagory2.png"
 	},
 	{
+		"index":2,
 		"id":"conceptart",
 		"name":"CONCEPT ART",
 		"imagePath":"../styles/images/workCatagory3.png"
 	},
 	{
+		"index":3,
 		"id":"photography",
 		"name":"PHOTOGRAPHY",
 		"imagePath":"../styles/images/workCatagory4.png"
