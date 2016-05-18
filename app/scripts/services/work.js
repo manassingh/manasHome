@@ -38,4 +38,8 @@ angular.module('manasHomeApp')
             return response.data;
           });
     };
+
+    this.isLoading = function () {
+        return $http.pendingRequests.length;
+    };
   });

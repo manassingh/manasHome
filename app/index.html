@@ -15,7 +15,9 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
-  <body ng-app="manasHomeApp">
+  <body ng-app="manasHomeApp" ng-csp>
+  
+
     <!--[if lte IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -54,7 +56,9 @@
    <!--container-->
     
     <div class="mainContainer">
+      <div class="headerParentContainer" ng-include="'views/header.html'" ng-controller="HeaderCtrl as header"></div>
       <div ui-view style="height: 100%;width: 100%;"></div>
+      <div class="footerParentContainer" ng-include="'views/footer.html'" ng-controller="FooterCtrl as footer"></div>
     </div>
     
     <!--footer-->
@@ -91,6 +95,7 @@
         <script src="scripts/controllers/footer.js"></script>
         <script src="scripts/services/work.js"></script>
         <script src="scripts/controllers/projects.js"></script>
+        
         <!-- endbuild -->
 </body>
 </html>

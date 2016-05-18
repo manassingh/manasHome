@@ -22,7 +22,6 @@ angular.module('manasHomeApp')
       }*/
     };
   	angular.element(document).ready(function () {
-      //console.log($('#myContainer'));
   		var menuList;
 	  	header.getMenu().then(function(data){
 	  		menuList=data;

@@ -8,12 +8,13 @@
  * Controller of the manasHomeApp
  */
 angular.module('manasHomeApp')
-  .controller('WorkCtrl', ['header','work',function (header,work) {
+  .controller('WorkCtrl', ['header','work',function (header,work,$scope,$http) {
   	var self = this;
 
     //getting data from work service
     work.getWork().then(function(data){
       self.workList=data;
+
     });
 
     self.openModel = function(event){
@@ -21,15 +22,19 @@ angular.module('manasHomeApp')
     };
 
     self.getController = function(event){ 
-      console.log(event);
+      
         return 'views/projects.html';
     };
-
+    angular.element(window).load(function () {
+      console.log("window load");
+    });
   	angular.element(document).ready(function () {
+      console.log("document ready");
   		var menuList;
 	  	header.getMenu().then(function(data){
 	  		menuList=data;
 	  		header.setSelectedMenu(menuList[1].id);
 	  	});
+      
     });
   }]);

@@ -2,7 +2,7 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div ng-repeat="photo in projects.photoList" style="max-height: 100%;" class="item" ng-class="{{photo.index}}==0 ? 'active':''">
-      <img src="{{photo.imagePath}}" class="sketchesImg" style="" alt="...">
+      <img src="{{photo.imagePath}}"  class="sketchesImg" style="" alt="...">
       <div class="carousel-caption">
         {{photo.index + 1}}/{{projects.photoList.length }}
       </div>

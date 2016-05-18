@@ -54,7 +54,22 @@ angular.module('manasHomeApp')
     		event.target.style.color='white';
     		flagAlreadySelected = true;
     	}
-        window.location.reload();
+        var menuDiv = angular.element(document.getElementById('headerRow'));
+        var menuIcon = angular.element(document.getElementById('menuIcon'));
+        if(!flagMenuOpen){
+            $(menuIcon).removeClass('menuIcon');
+            $(menuIcon).addClass('menuIconClose');
+            $(menuDiv).removeClass('hidden-xs');
+            $(menuDiv).addClass('headerFullHeight');
+            flagMenuOpen=1;
+        }else{
+            $(menuIcon).removeClass('menuIconClose');
+            $(menuIcon).addClass('menuIcon');
+            $(menuDiv).addClass('hidden-xs');
+            $(menuDiv).removeClass('headerFullHeight');
+            flagMenuOpen=0;
+        }
+       // window.location.reload();
     	
     };
 
@@ -66,6 +81,7 @@ angular.module('manasHomeApp')
 	    	}else{
 	    		flagAlreadySelected = false;
 	    	}
+
 	    	event.target.children[0].style.color='white';
     	}
     };

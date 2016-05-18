@@ -1,13 +1,13 @@
 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
   <div class="panel panel-default" ng-repeat="myproject in projects.projectsList">
     <div class="panel-heading" role="tab" id="headingOne">
-      <h4 class="panel-title">
-        <div style="text-align: left;padding: 8px" role="button" data-toggle="collapse" data-parent="#accordion" href="#{{myproject.id}}" aria-expanded="true" aria-controls="{{myproject.id}}">
+      <h4 class="panel-title" >
+        <div style="text-align: left;padding: 8px;" role="button" data-toggle="collapse" data-parent="#accordion" href="#{{myproject.id}}" aria-expanded="true" aria-controls="{{myproject.id}}">
           <span style="margin-right: 10px" class="glyphicon glyphicon-chevron-right"></span>{{myproject.title}}
         </div>
       </h4>
     </div>
-    <div id="{{myproject.id}}" class="panel-collapse collapse" ng-class="{{myproject.index}}==0 ? 'in':''" role="tabpanel" aria-labelledby="headingOne">
+    <div id="{{myproject.id}}" class="panel-collapse collapse"  role="tabpanel" aria-labelledby="headingOne">
       <div class="panel-body">
       	<div class="row" style="padding: 10px">
       		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -18,9 +18,8 @@
     				    <div ng-repeat="imgs in myproject.imagePath" style="max-height: 100%;background: #323232;padding:10px;  " class="item" ng-class="{{imgs.ind}}==0 ? 'active':''">
     				      <img src="{{imgs.path}}" class="projectImg" style="" alt="project image" ng-class="{{myproject.index}}==5 ? 'hide':'show'">
                   <div class="embed-responsive embed-responsive-16by9" ng-class="{{myproject.index}}==5 ? 'show':'hide'">
-                      <video class="embed-responsive-item" controls>
-                        <source src="{{imgs.path}}" type="video/mp4">
-                      </video>
+                      <object class="embed-responsive-item" data="{{projects.trustSrc(imgs.path)}}" frameborder="0" allowfullscreen></object>
+                  
                   </div>
     				      <div class="carousel-caption" ng-class="{{myproject.index}}==5 ? 'hide':'show'">
     				        {{imgs.ind + 1}}/{{myproject.imagePath.length }}

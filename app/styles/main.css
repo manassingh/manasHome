@@ -51,13 +51,38 @@ a{
 .hide{
   display: none;
 }
+.ng-cloack {
+  z-index: 9999;
+}
+.full-screen-loader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -9999;
+}
+[ng-cloal].loadingDiv{
+  display: block !important; 
+}
+.ng-cloal.loadingDiv{
+  display: block !important; 
+}
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
 /*main common*/
-
+#loadingDiv{
+  z-index: 9999;
+  position: absolute;
+  top:0px;
+  left:0px;
+  width:100%;
+}
 .mainContainer{
   height: 100% !important;
   width: 100% !important;
   margin:0px !important;
   padding:0px !important;
+  background-image: url('images/homeBg.png');
   background-repeat: no-repeat;
   background-size: cover; 
 }
@@ -209,9 +234,6 @@ a{
 /*main common ends*/
 
 /*home page*/
-  .homeContainer{
-    background-image: url('images/homeBg.png');
-  }
   .homePageTextContainer{
     padding: 15px;
     padding-right: 350px;
@@ -345,11 +367,11 @@ a{
 }
 .modelClose{
   color:white;
-  font-size: 2em;
+  font-size: 2.2em;
 }
 .modelCloseBlack{
   color:#000;
-  font-size: 2em;
+  font-size: 2.2em;
 }
 .modelClose:hover{
   color:#fff;
@@ -386,7 +408,6 @@ a{
   background-size: contain;
   height: 50vh;
   width: auto;
-  margin-top: 20vh;
 }
 .comingSoonTextContainer{
   height: auto;
@@ -540,7 +561,7 @@ a{
 }
 /*tablet media ipad*/
 @media screen and (min-width: 767px) and (max-width: 768px){
-  .homeContainer{
+  .mainContainer{
     background-image: url('images/homeBgMobile.png');
     background-repeat: no-repeat;
     background-size: cover; 
@@ -564,16 +585,6 @@ a{
        .workCatagoryRow{
           padding-top: 10% !important;
         }
-      /* .homeContainer{
-        background-image: url('images/noLandscapeMobile.png') !important;
-       }
-       .headerParentContainer{
-          display: none;
-       }
-       
-       .footerParentContainer{
-          display: none;
-       }*/
     }
 
   /*main common*/
@@ -587,7 +598,7 @@ a{
     /*header ends*/
   /*main common ends*/
   /*home page*/
-  .homeContainer{
+  .mainContainer{
     background-image: url('images/homeBgMobile.png');
     background-repeat: no-repeat;
     background-size: cover; 

@@ -10,39 +10,39 @@
     "imagePath": [
       {
         "ind":0,
-        "path":"../styles/images/project/project1/1.png"
+        "path":"../styles/images/project/project1/1.jpg"
       },
       {
         "ind":1,
-        "path":"../styles/images/project/project1/2.png"
+        "path":"../styles/images/project/project1/2.jpg"
       },
       {
         "ind":2,
-        "path":"../styles/images/project/project1/3.png"
+        "path":"../styles/images/project/project1/3.jpg"
       },
       {
         "ind":3,
-        "path":"../styles/images/project/project1/4.png"
+        "path":"../styles/images/project/project1/4.jpg"
       },
       {
         "ind":4,
-        "path":"../styles/images/project/project1/5.png"
+        "path":"../styles/images/project/project1/5.jpg"
       },
       {
         "ind":5,
-        "path":"../styles/images/project/project1/6.png"
+        "path":"../styles/images/project/project1/6.jpg"
       },
       {
         "ind":6,
-        "path":"../styles/images/project/project1/7.png"
+        "path":"../styles/images/project/project1/7.jpg"
       },
       {
         "ind":7,
-        "path":"../styles/images/project/project1/8.png"
+        "path":"../styles/images/project/project1/8.jpg"
       },
       {
         "ind":8,
-        "path":"../styles/images/project/project1/9.png"
+        "path":"../styles/images/project/project1/9.jpg"
       }
       
     ]
@@ -58,43 +58,43 @@
     "imagePath": [
       {
         "ind":0,
-        "path":"../styles/images/project/project2/1.png"
+        "path":"../styles/images/project/project2/1.jpg"
       },
       {
         "ind":1,
-        "path":"../styles/images/project/project2/2.png"
+        "path":"../styles/images/project/project2/2.jpg"
       },
       {
         "ind":2,
-        "path":"../styles/images/project/project2/3.png"
+        "path":"../styles/images/project/project2/3.jpg"
       },
       {
         "ind":3,
-        "path":"../styles/images/project/project2/4.png"
+        "path":"../styles/images/project/project2/4.jpg"
       },
       {
         "ind":4,
-        "path":"../styles/images/project/project2/5.png"
+        "path":"../styles/images/project/project2/5.jpg"
       },
       {
         "ind":5,
-        "path":"../styles/images/project/project2/6.png"
+        "path":"../styles/images/project/project2/6.jpg"
       },
       {
         "ind":6,
-        "path":"../styles/images/project/project2/7.png"
+        "path":"../styles/images/project/project2/7.jpg"
       },
       {
         "ind":7,
-        "path":"../styles/images/project/project2/8.png"
+        "path":"../styles/images/project/project2/8.jpg"
       },
       {
         "ind":8,
-        "path":"../styles/images/project/project2/9.png"
+        "path":"../styles/images/project/project2/9.jpg"
       },
       {
         "ind":9,
-        "path":"../styles/images/project/project2/10.png"
+        "path":"../styles/images/project/project2/10.jpg"
       }
       
     ]
@@ -110,11 +110,11 @@
     "imagePath": [
       {
         "ind":0,
-        "path":"../styles/images/project/project6/1.mp4"
+        "path":"https://www.youtube.com/embed/_O-WY9n12so"
       },
       {
         "ind":1,
-        "path":"../styles/images/project/project6/2.mp4"
+        "path":"https://www.youtube.com/embed/FSAgB0YaYsw"
       }
     ]
   },
@@ -129,27 +129,27 @@
     "imagePath": [
       {
         "ind":0,
-        "path":"../styles/images/project/project3/1.png"
+        "path":"../styles/images/project/project3/1.jpg"
       },
       {
         "ind":1,
-        "path":"../styles/images/project/project3/2.png"
+        "path":"../styles/images/project/project3/2.jpg"
       },
       {
         "ind":2,
-        "path":"../styles/images/project/project3/3.png"
+        "path":"../styles/images/project/project3/3.jpg"
       },
       {
         "ind":3,
-        "path":"../styles/images/project/project3/4.png"
+        "path":"../styles/images/project/project3/4.jpg"
       },
       {
         "ind":4,
-        "path":"../styles/images/project/project3/5.png"
+        "path":"../styles/images/project/project3/5.jpg"
       },
       {
         "ind":5,
-        "path":"../styles/images/project/project3/6.png"
+        "path":"../styles/images/project/project3/6.jpg"
       }
       
     ]
@@ -165,27 +165,27 @@
     "imagePath": [
       {
         "ind":0,
-        "path":"../styles/images/project/project4/1.png"
+        "path":"../styles/images/project/project4/1.jpg"
       },
       {
         "ind":1,
-        "path":"../styles/images/project/project4/2.png"
+        "path":"../styles/images/project/project4/2.jpg"
       },
       {
         "ind":2,
-        "path":"../styles/images/project/project4/3.png"
+        "path":"../styles/images/project/project4/3.jpg"
       },
       {
         "ind":3,
-        "path":"../styles/images/project/project4/4.png"
+        "path":"../styles/images/project/project4/4.jpg"
       },
       {
         "ind":4,
-        "path":"../styles/images/project/project4/5.png"
+        "path":"../styles/images/project/project4/5.jpg"
       },
       {
         "ind":5,
-        "path":"../styles/images/project/project4/6.png"
+        "path":"../styles/images/project/project4/6.jpg"
       }
       
     ]
@@ -201,23 +201,23 @@
     "imagePath": [
       {
         "ind":0,
-        "path":"../styles/images/project/project5/1.png"
+        "path":"../styles/images/project/project5/1.jpg"
       },
       {
         "ind":1,
-        "path":"../styles/images/project/project5/2.png"
+        "path":"../styles/images/project/project5/2.jpg"
       },
       {
         "ind":2,
-        "path":"../styles/images/project/project5/3.png"
+        "path":"../styles/images/project/project5/3.jpg"
       },
       {
         "ind":3,
-        "path":"../styles/images/project/project5/4.png"
+        "path":"../styles/images/project/project5/4.jpg"
       },
       {
         "ind":4,
-        "path":"../styles/images/project/project5/5.png"
+        "path":"../styles/images/project/project5/5.jpg"
       }
     ]
   }
