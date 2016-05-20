@@ -10,8 +10,6 @@
 angular.module('manasHomeApp')
   .controller('HeaderCtrl', ['header',function (header) {
     var self= this;
-    var currentMenu;
-    var flagAlreadySelected = true;
     
     //mobile menu
     var flagMenuOpen=0;
@@ -39,7 +37,15 @@ angular.module('manasHomeApp')
     header.getMenu().then(function(data){
   		self.menuList=data;
   	});
-    currentMenu= header.getSelectedMenu();
+    this.currentMenu= function(){
+        var ind=header.getSelectedMenu();
+        var links=angular.element(document.getElementsByClassName('headerLinks'));
+        for(var i = 0; i < links.length; i++){
+           links[i].style.color='#A2A2A2';
+        }
+        links[ind].style.color='white';
+        return 'headerWhite';
+    }; 
     
     //click color change
     self.selectedMenu = function(event){
@@ -49,10 +55,8 @@ angular.module('manasHomeApp')
 		}
 		if (event.target.tagName.toUpperCase()==='DIV') {
 			event.target.children[0].style.color='white';
-    		flagAlreadySelected = true;
 		}else if (event.target.tagName.toUpperCase()==='P'){
     		event.target.style.color='white';
-    		flagAlreadySelected = true;
     	}
         var menuDiv = angular.element(document.getElementById('headerRow'));
         var menuIcon = angular.element(document.getElementById('menuIcon'));
@@ -69,26 +73,5 @@ angular.module('manasHomeApp')
             $(menuDiv).removeClass('headerFullHeight');
             flagMenuOpen=0;
         }
-       // window.location.reload();
-    	
-    };
-
-    //hover color change
-    self.hoverIn = function(event){
-    	if (event.target.tagName.toUpperCase()==='DIV') {
-    		if (event.target.children[0].style.color==='white') {
-	    		flagAlreadySelected = true;
-	    	}else{
-	    		flagAlreadySelected = false;
-	    	}
-
-	    	event.target.children[0].style.color='white';
-    	}
-    };
-    self.hoverOut = function(event){
-    	if (!flagAlreadySelected) {
-    		//console.log('out not selected');
-    		event.target.children[0].style.color='#A2A2A2';
-    	}
     };
   }]);

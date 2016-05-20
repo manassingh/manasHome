@@ -1,0 +1,20 @@
+[
+	{
+		"index":0,
+		"id":"graduation",
+		"heading":"GRADUATION :",
+		"details":" Indian Institute of Technology, Kanpur (IIT K), Bachelor in Biological sciences and bio engineering. (2010-2014)"
+	},
+	{
+		"index":1,
+		"id":"senior secondary",
+		"heading":"SENIOR SECONDARY :",
+		"details":" Mahanagar Boys’ Inter College, Lucknow. (2008-2009)"
+	},
+	{
+		"index":2,
+		"id":"secondary",
+		"heading":"SECONDARY :",
+		"details":" Mahanagar Boys’ Inter College, Lucknow. (2006-2007)"
+	}
+]

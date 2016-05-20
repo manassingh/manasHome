@@ -57,7 +57,7 @@
     
     <div class="mainContainer">
       <div class="headerParentContainer" ng-include="'views/header.html'" ng-controller="HeaderCtrl as header"></div>
-      <div ui-view style="height: 100%;width: 100%;"></div>
+      <div ui-view style="height: 100%;width: 100%; overflow:auto"></div>
       <div class="footerParentContainer" ng-include="'views/footer.html'" ng-controller="FooterCtrl as footer"></div>
     </div>
     
@@ -82,20 +82,22 @@
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/comingsoon.js"></script>
-        <script src="scripts/services/header.js"></script>
+        
         <script src="scripts/controllers/home.js"></script>
         <script src="scripts/controllers/work.js"></script>
         <script src="scripts/controllers/portfolio.js"></script>
         <script src="scripts/controllers/contact.js"></script>
         <script src="scripts/controllers/acknowledgement.js"></script>
         <script src="scripts/controllers/header.js"></script>
-        
+        <script src="scripts/services/header.js"></script>
         <script src="scripts/directives/autotype.js"></script>
         <script src="scripts/directives/autotype2.js"></script>
         <script src="scripts/controllers/footer.js"></script>
         <script src="scripts/services/work.js"></script>
         <script src="scripts/controllers/projects.js"></script>
         
+        <script src="scripts/services/portfolio.js"></script>
+        <script src="scripts/controllers/details.js"></script>
         <!-- endbuild -->
 </body>
 </html>

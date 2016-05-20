@@ -1,0 +1,20 @@
+[
+	{
+		"index":0,
+		"id":"education",
+		"name":"EDUCATION",
+		"imagePath":"../styles/images/education.png"
+	},
+	{
+		"index":1,
+		"id":"skills",
+		"name":"SKILLS",
+		"imagePath":"../styles/images/skills.png"
+	},
+	{
+		"index":2,
+		"id":"experience",
+		"name":"EXPERIENCE",
+		"imagePath":"../styles/images/experience.png"
+	}
+]

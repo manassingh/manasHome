@@ -1,5 +1,4 @@
 <div>
-	<div class="headerParentContainer" ng-include="'views/header.html'" ng-controller="HeaderCtrl as header"></div>
 	<div class="row workCatagoryRow">
 		<div class="workCatagoryContainer col-lg-3 col-md-3 col-sm-6 col-xs-6"  ng-repeat="workList in work.workList"  ng-click="work.openModel($event)" >
 			<div class="workCatagoryHover">
@@ -10,7 +9,7 @@
 
 				    <div class="modal-content " ng-class="{{workList.index}}==0 ? 'modelContentWhite':'modelContent'">
 				      <div class="modal-header" style="border-bottom: none">
-				        <button type="button" class="close button" ng-class="{{workList.index}}==0 ? 'modelCloseBlack':'modelClose'" ng-click="work.changeFocus()" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				        <button type="button" class="close button" ng-class="{{workList.index}}==0 ? 'modelCloseBlack':'modelClose'" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 				        <h4 class="modal-title " ng-class="{{workList.index}}==0 ? 'modalTitleBlack':'modalTitle'" id="myModalLabel">{{workList.name}}</h4>
 
 				      </div>

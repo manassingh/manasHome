@@ -1,7 +1,42 @@
+
+
 <div>
 	<div class="homePageTextContainer">
-		<auto-type class="autoType1"></auto-type>
-		<br /><br />
-		<auto-type2 class="autoType2"></auto-type>
+
+		<div class="row">
+
+			<div  class="col-lg-4 col-md-4 col-sm-4 col-xs-4" ng-repeat="folio in portfolio.portfolioList" data-toggle="modal" ng-click="portfolio.openModel($event)">
+				<div class="protfolioLogoContainer">
+					<div id="{{folio.id}}" class="protfolioLogo" style="background-image:url('{{folio.imagePath}}')" >
+					
+					</div>
+					<p class="protfolioLogoText">{{folio.name}}</p>
+				</div>  
+				
+				
+
+			</div>
+		</div>
 	</div>
+</div>
+<!--model-->
+<div ng-repeat="folio in portfolio.portfolioList">
+	<div class="modal fade"  id="model{{folio.id}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+
+  <div class="modal-dialog" role="document">
+
+    <div class="modal-content " ng-class="{{folio.index}}==0 ? 'modelContentPink':{{folio.index}}==1 ? 'modelContentWhite':'modelContentBlue'">
+      <div class="modal-header" style="border-bottom: none">
+        <button type="button" class="close button modelCloseBlack" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title modalTitleBlack" id="myModalLabel">{{folio.name}}</h4>
+
+      </div>
+
+      <div class="modal-body">
+        <div ng-include="'views/'+ folio.id +'.html'" ng-controller="DetailsCtrl as details"></div>
+      </div>
+    
+    </div>
+  </div>
+</div> 
 </div>

@@ -1,17 +1,21 @@
 [
 	{
+		"index":0,
 		"id":"home",
 		"name":"HOME"
 	},
 	{
+		"index":1,
 		"id":"work",
 		"name":"WORK"
 	},
 	{
+		"index":2,
 		"id":"portfolio",
 		"name":"PORTFOLIO"
 	},
 	{
+		"index":3,
 		"id":"contact",
 		"name":"CONTACT"
 	}

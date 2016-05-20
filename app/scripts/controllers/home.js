@@ -9,23 +9,12 @@
  */
 angular.module('manasHomeApp')
   .controller('HomeCtrl', ['header',function (header) {
-  	var self = this;
-    var text = 'try this example';
-    //var index = 0;
-
-    self.nextLetter = function(event) {
-     // console.log(event);
-      return text;
-     /* if (index <= type_this.length) {
-          demo_input.value = type_this.substr(0, index++);
-          setTimeout("next_letter()", 50);
-      }*/
-    };
+  	
   	angular.element(document).ready(function () {
   		var menuList;
 	  	header.getMenu().then(function(data){
 	  		menuList=data;
-	  		header.setSelectedMenu(menuList[0].id);
+	  		header.setSelectedMenu(menuList[0].index);
 	  	});
       
     });

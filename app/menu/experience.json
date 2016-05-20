@@ -1,0 +1,26 @@
+[
+	{
+		"index":0,
+		"id":"oracle",
+		"heading":"ORACLE :",
+		"details":" Cloud Developer, Member of technical staff. (Bangalore, India ; 2014-Now)"
+	},
+	{
+		"index":1,
+		"id":"softgalaxy",
+		"heading":"SOFTGALAXY :",
+		"details":" Software developer and Designer. (Bangalore, India ; May-June'14)"
+	},
+	{
+		"index":2,
+		"id":"udghosh",
+		"heading":"UDGHOSH :",
+		"details":" Head Designer of anual sports festival of IIT Kanpur. (Kanpur, India ; 2013)"
+	},
+	{
+		"index":3,
+		"id":"fineartsclub",
+		"heading":"FINE ARTS CLUB :",
+		"details":" Co-ordinator of one of the largest cultural club in IIT Kanpur. (Kanpur, India ; 2012-2013)"
+	}
+]

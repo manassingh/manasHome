@@ -14,7 +14,8 @@ angular.module('manasHomeApp')
   		var menuList;
 	  	header.getMenu().then(function(data){
 	  		menuList=data;
-	  		header.setSelectedMenu(menuList[3].id);
+	  		header.setSelectedMenu(menuList[3].index);
+        console.log('header set from contact');
 	  	});
     });
   }]);

@@ -88,6 +88,12 @@ a{
 }
 
     /*header starts*/
+    .headerWhite{
+      color:#fff;
+    }
+    .headerGrey{
+      color:#A2A2A2;
+    }
     .headerParentContainer{
       position: absolute;
       top: 0px;
@@ -124,8 +130,10 @@ a{
     .headerColumnActive{
       border-bottom: 1px solid white;
     }
+    .headerColumn:hover .headerLinks{
+      color:white !important;
+    }
     .headerColumn p{
-      color:#A2A2A2;
       font-size: 1.2em;
       font-family: roboto-Bold;
       -webkit-transition: all ease-out .4s;
@@ -275,7 +283,7 @@ a{
   padding-top: 20%;
   text-align: center;
   height: 100%;
-  overflow: auto;
+  overflow: hidden;
   padding-bottom: 60px;
   vertical-align: center;
   -webkit-transition: all ease-out .4s;
@@ -357,12 +365,22 @@ a{
 .modelContentWhite{
   background: #e0e0e0;
 }
+.modelContentPink{
+  background: #F7A9BD;
+}
+.modelContentAqua{
+  background: #A4EBF4;
+}
+.modelContentBlue{
+  background: #BDBAFE;
+}
 .modalTitle{
   color: #E0E0E0;
   font-family: roboto-Bold;
 }
 .modalTitleBlack{
   color: #000;
+  text-align: center;
   font-family: roboto-Bold;
 }
 .modelClose{
@@ -391,6 +409,69 @@ a{
   margin-bottom: 45px;
 }
 /*work page ends*/
+
+/*portfolio starts*/
+.protfolioLogo{
+  cursor: pointer;
+  background-size: 100% 100%;
+  opacity: .4;
+  background-repeat: no-repeat;
+  height: inherit;
+  text-align: center;
+  height: 190px;
+  width: 190px;
+  display: inline-block;
+  -webkit-transition: all ease-out .4s;
+  -moz-transition: all ease-out .4s;
+  -o-transition: all ease-out .4s;
+  transition: all ease-out .4s;
+}
+.protfolioLogoText{
+  font-size: 1.4em;
+  color:#fff;
+  opacity: 0;
+  font-family: roboto-Bold;
+  padding-top: 0%;
+  -webkit-transition: all ease-out .4s;
+  -moz-transition: all ease-out .4s;
+  -o-transition: all ease-out .4s;
+  transition: all ease-out .4s;
+}
+.protfolioLogo:hover {
+  opacity: 1;
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+   transform: rotate(360deg);
+}
+.protfolioLogoContainer:hover .protfolioLogoText{
+  opacity: .8;
+}
+
+.educationHeading{
+   font-family: roboto-Bold;
+    font-size: 1.7em;
+    color: black;
+    -webkit-transition: all ease-out .4s;
+      -moz-transition: all ease-out .4s;
+      -o-transition: all ease-out .4s;
+      transition: all ease-out .4s;
+}
+.educationContainer{
+    padding: 15px;
+    padding-right: 350px;
+    padding-left: 350px;
+    text-align: center;
+    padding-top: 16%;
+    -webkit-transition: all ease-out .4s;
+      -moz-transition: all ease-out .4s;
+      -o-transition: all ease-out .4s;
+      transition: all ease-out .4s;
+  }
+  .skillColumn{
+    padding:20px;
+  }
+/*portfolio ends*/
 
 
 /*about me*/
@@ -524,6 +605,14 @@ a{
     }
     /*work page ends*/
 
+    /*protfolio*/
+    .educationContainer{
+      padding-right: 150px;
+      padding-left: 150px;
+      padding-top: 25%;
+    }
+    /*protfolio ends*/
+
 }
 /*tablet media*/
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -543,6 +632,9 @@ a{
   .autoType2{
     font-size: 1.5em;
   }
+  .educationHeading{
+    font-size: 1.5em;
+  }
   /*home page ends*/
 
   /*work paage*/
@@ -558,6 +650,13 @@ a{
       padding: 0px;
     }
   /*work page ends*/
+
+  .educationContainer{
+      padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 25%;
+    }
+    /*protfolio ends*/
 }
 /*tablet media ipad*/
 @media screen and (min-width: 767px) and (max-width: 768px){
@@ -579,11 +678,15 @@ a{
        .homePageTextContainer{
           padding-top: 19% !important;
        }
+       .educationContainer{
+          padding-top:0% !important;
+       }
        .headerColumn{
         padding:25px !important;
        }
        .workCatagoryRow{
           padding-top: 10% !important;
+          overflow-y: auto;
         }
     }
 
@@ -608,10 +711,18 @@ a{
     padding-left: 20px;
     padding-top: 55%;
   }
+  .educationContainer{
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 15%;
+  }
   .autoType1{
     font-size: 1.4em;
   }
   .autoType2{
+    font-size: 1.1em;
+  }
+  .educationHeading{
     font-size: 1.1em;
   }
   .manasLogo{
@@ -623,6 +734,7 @@ a{
   /*home page ends*/
   /*work page*/
     .workCatagoryRow{
+      overflow-y: auto;
       margin-left: 20px;
       margin-right: 20px;
       padding-top: 30%;
@@ -698,4 +810,18 @@ a{
         max-height: 83vh !important;
       }
   /*work page ends*/
+
+  /*protfolio starts*/
+    .protfolioLogo{
+      height: 80px;
+      width: 80px;
+    }
+    .protfolioLogoText{
+      font-size: .8em;
+      opacity: 1;
+    }
+    .skillColumn{
+      padding:5px;
+    }
+  /*protfolio ends*/
 }
